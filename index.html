@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  height: 100vh;
+  margin: 0;
+  background: radial-gradient(#187989, #6dd5ed);
+  background-repeat: no-repeat;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: #111;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 6px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 15px;
+ 
+}
+
+.fa-home:before {
+    content: "Home";
+}
+.fa-search:before {
+    content: "Search";
+}
+.fa-envelope:before {
+    content: "Mail";
+}
+.fa-globe:before {
+    content: "Globe";
+}
+.fa-trash:before {
+    content: "Trash";
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+	.icon-bar a {
+	  float: left;
+	  width: 20%;
+	  text-align: center;
+	  padding: 4px 0;
+	  color: blue;
+	  font-size: 12px;
+	
+	}
+.fa-home:before {
+    content: "\f015";
+}
+.fa-search:before {
+    content: "\f002";
+}	
+.fa-envelope:before {
+    content: "\f0e0";
+}
+.fa-globe:before {
+    content: "\f0ac";
+}
+.fa-trash:before {
+    content: "\f1f8";
+}
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  bottom: 0;
+}
+  
+}
+</style>
+<body>
+
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a> 
+  <a href="#"><i class="fa fa-search"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+</div>
+</body>
+</html> 
