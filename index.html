@@ -6,7 +6,7 @@
 body {
   height: 100vh;
   margin: 0;
-  background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('planets.jpg');
+  background: linear-gradient(45deg, #fa7c30 28.3%, rgba(0, 0, 0, 0) 10%), url('planets.jpg');
   background-repeat: no-repeat;
 }
 
@@ -30,7 +30,7 @@ text-shadow: 2px 2px 5px red;
 	width: 100%;
 	text-align: center;
 	color: black;
-	font-size: 20px;
+	font: italic bold 20px/20px Georgia, serif;
 }
 
 .activity {
@@ -81,6 +81,13 @@ text-shadow: 2px 2px 5px red;
 }
 
 @media screen and (max-width: 600px) {
+
+	body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(45deg, #fa7c30 46.5%, rgba(0, 0, 0, 0) 10%), url('planets.jpg');
+  background-repeat: no-repeat;
+}
 	.icon-bar a {
 	  float: left;
 	  width: 19.75%;
@@ -119,14 +126,16 @@ text-shadow: 2px 2px 5px red;
 </style>
 <body>
 <div class="header">
-  <h1>SELLA INDIA</h1>
+  <h1>Sella India</h1>
 </div>
+<div class="icon-bg">
 <div class="icon-bar">
   <a class="active" href="#"><i class="fa fa-home"></i></a> 
   <a class="activity" href="#"><i class="fa fa-search"></i></a> 
   <a class="activity" href="#"><i class="fa fa-envelope"></i></a> 
   <a class="activity" href="#"><i class="fa fa-globe"></i></a>
   <a class="activity" href="#"><i class="fa fa-trash"></i></a> 
+</div>
 </div>
 </body>
 </html> 
